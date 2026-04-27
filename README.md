@@ -1,35 +1,37 @@
 # Syncfusion Vue CSP Sample
 
-This application showcases the Syncfusion Vue Grid component implemented with a strict Content Security Policy (CSP).
+A minimal Vue sample demonstrating how to integrate the Syncfusion Vue Grid component while enforcing a strict Content Security Policy.
 
-To learn more about Content Security Policy (CSP), refer to the [Syncfusion Vue CSP documentation](https://ej2.syncfusion.com/vue/documentation/common/troubleshoot/content-security-policy).
+## Overview
 
-## Getting Started
+This repository provides a small, CSP-conscious example of Syncfusion Grid usage in Vue. It highlights how default dev tooling can introduce inline-CSP issues and where to apply safe configuration changes.
 
-* To clone the sample app repository locally, open the command prompt in the desired location and execute the following command.
+Refer to Syncfusion's CSP guidance: https://ej2.syncfusion.com/vue/documentation/common/troubleshoot/content-security-policy
 
-```sh
+## Features
 
-git clone https://github.com/SyncfusionExamples/ej2-vue-csp-example.git
+- CSP-friendly integration of Syncfusion Vue Grid
+- Notes on avoiding inline scripts/styles and devtool pitfalls
+- Minimal sample intended for local testing and validation
 
-```
+## Prerequisites
 
-* Navigate to the project directory:
+- Node.js (LTS) and npm (or yarn/pnpm)
 
-```sh
-cd ej2-vue-csp-example
-```
+## Installation and Run
 
-## Installing Packages
+1. Install dependencies:
 
-Install the required node modules by running the following command:
+   ```bash
+   npm install
+   ```
 
-```sh
-npm install
-```
+2. Start the development server:
 
-## Development server
+   ```bash
+   npm run serve
+   ```
 
-To start the development server, run the command `npm run serve`. Then, open your web browser and navigate to [http://localhost:8080/](http://localhost:8080/) to access the application. The application will automatically reload whenever you make changes to the source files.
+3. Open the app in your browser:
 
-> Note: The development build utilizes the [eval-source-map](https://webpack.js.org/configuration/devtool/) devtool provided by webpack. To resolve the unsafe-inline CSP error, you can modify the [vue.config.js](./vue.config.js) file and update the devtool setting to `source-map`.
+   - Visit http://localhost:8080/ to view the sample.
